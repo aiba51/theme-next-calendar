@@ -35,3 +35,16 @@ CloudCalendar:
 ### 说明
 
 提取自`Landscape-F`主题, 修改后适配theme-next
+
+### 更新
+
+为了适配新版的Next主题，作了几处修改：
+1. `calendar.swig`修改为`calendar.njk`，并且将里面的`{% if theme.CloudCalendar.enable %}{% endif %}`标签修改为`<div></div>`。
+2. 将`sidebar.swig`修改为`sidebar.njk`,里面的文件保持不变。
+3. 两个`.swig`已经修改为`.njk`，自然`index.js`里面的路径也要修改，修改如下：
+```
+ path.join(__dirname ,'sidebar.njk')
+path.join(__dirname ,'calendar.njk')
+```
+
+Next-8.11.0版本实测可用。

@@ -18,8 +18,8 @@ hexo.extend.filter.register('theme_inject', function(injects) {
     return;
   }
   if (!hexo.theme.config.CloudCalendar.disableSidebar) {
-    injects.sidebar.file('calendar-sidebar', path.join(__dirname ,'sidebar.swig'), {}, {cache: true});
+    injects.sidebar.file('calendar-sidebar', path.join(__dirname ,'sidebar.njk'), {}, {cache: true});
   }
-  injects.bodyEnd.file('calendar-script', path.join(__dirname ,'calendar.swig'), {}, {cache: true});
+  injects.bodyEnd.file('calendar-script', path.join(__dirname ,'calendar.njk'), {}, {cache: true});
   injects.style.push(path.join(__dirname ,'calendar.styl'));
 });
