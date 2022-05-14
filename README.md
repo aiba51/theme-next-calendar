@@ -9,7 +9,7 @@
 1. 首先安装hexo插件
 
 ```shell
-npm install theme-next/theme-next-calendar
+npm install aiba51/theme-next-calendar
 ```
 
 2. 在next主题配置文件`_config.yml`配置
