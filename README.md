@@ -26,7 +26,7 @@ CloudCalendar:
 
 ### 渲染日历
 
-默认是在边栏中渲染, 当然也可以在任何位置显示, 只要`disableSidebar`禁用，并添加`sidebar.swig`中的代码至你希望的位置
+默认是在边栏中渲染, 当然也可以在任何位置显示, 只要`disableSidebar`禁用，并添加`sidebar.njk`中的代码至你希望的位置
 
 ### 自定义日历颜色
 
